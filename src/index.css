@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #161616;
+  --color-secondary: #fefefe;
+  --font-arimo: "Arimo", sans-serif;
+  --font-public-sans: "Public Sans", sans-serif;
+}
