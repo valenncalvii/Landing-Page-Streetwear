@@ -1,10 +1,13 @@
+import SlideInDiv from "../hooks/animations/slideInDiv";
 const SectionNewProducts = () => {
   return (
     <section
       id="cards"
       className="h-screen w-[100%] bg-primary text-secondary p-14"
     >
-      <h1 className="font-arimo text-[120px]">NEW ARRIVALS</h1>
+      <SlideInDiv>
+        <h1 className="font-arimo text-[120px]">NEW ARRIVALS</h1>
+      </SlideInDiv>
       <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
         <div className="group relative border-1 rounded-xl p-8">
           <img

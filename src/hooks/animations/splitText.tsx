@@ -21,7 +21,7 @@ export const splitText = (text: string): React.ReactElement => {
   return (
     <motion.span
       variants={containerVariants}
-      initial="hidden"
+      initial={"hidden"}
       animate="visible"
       style={{ display: "inline-block", overflow: "hidden" }}
     >

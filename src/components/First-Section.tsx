@@ -1,3 +1,5 @@
+import SlideInDiv from "../hooks/animations/slideInDiv";
+
 const FirstSection = () => {
   return (
     <section className="h-screen w-[100%] relative bg-secondary text-secondary p-14">
@@ -8,21 +10,24 @@ const FirstSection = () => {
           className="h-screen w-[100%] object-cover"
         />
       </div>
-
       <section className="relative z-10">
         <div className="absolute top-70 text-[120px] font-arimo font-light tracking-tight">
-          <h1 className="w-290 h-30">WE’RE</h1>
-          <h1 className="w-290 h-30">PROUD OF</h1>
-          <h1 className="w-290 h-30">OUR ROOTS</h1>
+          <SlideInDiv>
+            <h1 className="w-290 h-30">WE'RE</h1>
+            <h1 className="w-290 h-30">PROUD OF</h1>
+            <h1 className="w-290 h-30">OUR ROOTS</h1>
+          </SlideInDiv>
         </div>
         <div className="absolute top-100 left-200 w-130 text-justify text-[28px] font-public-sans font-light leading-7">
-          <p>
-            What's special about your product, service, or company? Use this
-            space to highlight the things that set you apart from your
-            competition, whether it's a special feature, a unique philosophy, or
-            awards and recognition that you have received. Think of this as your
-            elevator pitch to get the reader's attention.
-          </p>
+          <SlideInDiv>
+            <p>
+              What's special about your product, service, or company? Use this
+              space to highlight the things that set you apart from your
+              competition, whether it's a special feature, a unique philosophy,
+              or awards and recognition that you have received. Think of this as
+              your elevator pitch to get the reader's attention.
+            </p>
+          </SlideInDiv>
         </div>
       </section>
     </section>
